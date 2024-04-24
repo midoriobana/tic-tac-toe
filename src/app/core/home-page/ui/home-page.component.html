@@ -1,0 +1,19 @@
+<div class="container">
+  <ng-template #emptyTemplate></ng-template>
+  <app-character-card [data$]="data$"></app-character-card>
+  <div class="scoreboard">
+    <p>X = {{ xPlayerPoints }}</p>
+    <p>O = {{ oPlayerPoints }}</p>
+  </div>
+  <div class="board">
+    <table>
+      <tr *ngFor="let row of board; let i = index">
+        <td *ngFor="let cell of row; let j = index" (click)="setPosition(i, j)">
+          <span *ngIf="cell">{{ cell }}</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<router-outlet></router-outlet>
+

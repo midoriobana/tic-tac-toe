@@ -1,0 +1,17 @@
+:host ::ng-deep {
+  display: flex;
+  justify-content: space-between;
+
+  .content {
+    max-width: 100px;
+    p {
+      text-align: center;
+    }
+  }
+
+  img.responsive {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+  }
+}

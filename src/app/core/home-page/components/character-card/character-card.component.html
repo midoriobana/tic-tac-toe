@@ -1,0 +1,12 @@
+<ng-container *ngIf="data$ | async as datas">
+  <ng-container *ngFor="let data of datas">
+    <div class="content">
+      <img
+        class="responsive"
+        [src]="data.thumbnail.path + '.' + data.thumbnail.extension"
+        [alt]="data.name + ' - ' + data.description"
+      />
+      <p>{{ data.name }}</p>
+    </div>
+  </ng-container>
+</ng-container>

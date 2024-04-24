@@ -1,0 +1,51 @@
+:host {
+  min-height: 100vh;
+  .container {
+    margin: 25px;
+  }
+  .scoreboard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      min-width: 100px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+
+  .board {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    table {
+      border-spacing: 0;
+      tr:first-of-type td:nth-child(2),
+      tr:nth-child(3) td:nth-child(2) {
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+      }
+
+      tr:nth-child(2) {
+        td:nth-child(1),
+        td:nth-child(3) {
+          border-top: 1px solid gray;
+          border-bottom: 1px solid gray;
+        }
+        td:nth-child(2) {
+          border: 1px solid gray;
+        }
+      }
+
+      td {
+        text-align: center;
+        min-width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
