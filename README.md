@@ -1,27 +1,60 @@
-# TicTacToe
+# Tic-Tac-Toe Game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+Welcome to the game of Tic-Tac-Toe! This interactive project allows you to challenge a friend.
 
-## Development server
+## How to Play
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The game is simple: two players take turns marking the spaces in a 3x3 grid with X or O. The first player to align three of their symbols horizontally, vertically, or diagonally wins the game! 
 
-## Code scaffolding
+Every victory counts! The game maintains an updated scoreboard for each player. With each victory, the player earns a point on the scoreboard.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+However, if neither player manages to align three symbols and all spaces are filled, the game will end in a draw, and no one will earn a point.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To start playing in your local environment, follow these steps:
 
-## Running unit tests
+1. Clone the repository to your local machine using:
+   `git clone https://github.com/midoriobana/tic-tac-toe.git`
+2. Navigate to the project folder:
+   `cd path_to_project`
+3. Install the project dependencies:
+   `npm install`
+4. Launch the development server:
+   `npm start`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Once the server is up, the game will be available in your browser on port 4200. Simply visit:
 
-## Running end-to-end tests
+`http://localhost:4200`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Enjoy playing  [Tic Tac Toe Game](https://midoriobana.github.io/tic-tac-toe "Click here to play")!
 
-## Further help
+# Jogo da Velha
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Bem-vindo ao Jogo da Velha! Este é um projeto interativo onde você pode jogar contra um amigo.
+
+## Como Jogar
+
+O jogo é simples: dois jogadores escolhem entre X e O para marcar os espaços em uma grade de 3x3. O primeiro jogador a conseguir alinhar três dos seus símbolos, seja na horizontal, vertical ou diagonal, vence a partida!
+
+Cada vitória conta! O jogo mantém um placar atualizado para cada jogador. A cada vitória, o jogador ganha um ponto no placar.
+
+Entretanto, se nenhum dos jogadores conseguir alinhar três símbolos e todos os espaços estiverem preenchidos, o jogo terminará empatado e ninguém ganhará ponto.
+
+## Instalação
+
+Para começar a jogar no seu ambiente local, siga estas etapas:
+
+1. Clone o repositório para a sua máquina local usando:
+   `git clone https://github.com/midoriobana/tic-tac-toe.git`
+2. Navegue até a pasta do projeto:
+   `cd caminho_para_o_projeto`
+3. Instale as dependências do projeto:
+   `npm install`
+4. Inicie o servidor de desenvolvimento:
+   `npm start`
+
+Após iniciar o servidor, o jogo estará disponível no seu navegador na porta 4200. Basta acessar:
+`http://localhost:4200`
+
+Divirta-se jogando [Jogo da Velha](https://midoriobana.github.io/tic-tac-toe "Clique aqui para jogar")!
