@@ -15,7 +15,6 @@ export class HomePageComponent implements OnInit {
   xPlayerPoints = 0;
   oPlayerPoints = 0;
 
-  @ViewChild('emptyTemplate') emptyTemplate!: TemplateRef<any>;
   data$: any;
 
   constructor(
@@ -30,9 +29,9 @@ export class HomePageComponent implements OnInit {
   openModal(player: string) {
     this.matDialog.open(ConfirmationDialogComponent, {
       data: {
+        width: '50%',
         content: {
-          width: '45',
-          h1: `Digite o nome do personagem do ${player}`,
+          title: `Digite o nome do personagem do ${player}`,
           button: 'enviar',
         },
       },
@@ -89,7 +88,7 @@ export class HomePageComponent implements OnInit {
       this.setPlayer();
     } else if (this.verifyDraw()) {
       this.matDialog.open(ConfirmationDialogComponent, {
-        width: '60%',
+        width: '50%',
         data: {
           content: {
             h1: 'Empate',
